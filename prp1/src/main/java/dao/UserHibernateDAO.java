@@ -40,7 +40,7 @@ public class UserHibernateDAO implements UserDAO {
         configuration.setProperty("hibernate.connection.username", "root");
         configuration.setProperty("hibernate.connection.password", "password12345");
         configuration.setProperty("hibernate.show_sql", "false");
-        configuration.setProperty("hibernate.hbm2ddl.auto", "update"); //Change to create
+        configuration.setProperty("hibernate.hbm2ddl.auto", "create"); 
         configuration.setProperty("hibernate.jdbc.time_zone", "UTC");
         return configuration;
     }
